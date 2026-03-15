@@ -1,0 +1,1190 @@
+<!doctype html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ksatriyau</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600&family=Lora:ital,wght@0,400;0,500;1,400&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="icon" href="icon.png" />
+  </head>
+  <body>
+    <nav id="nav">
+      <a href="#home" class="logo"><b>Satria</b> Henggar Yoselino</a>
+      <ul class="nlinks" id="nl">
+        <li><a href="#home" class="active">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#experience">Experience</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#jasa">Services</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+      <div class="hbg" id="hbg" onclick="toggleNav()">
+        <span></span><span></span><span></span>
+      </div>
+    </nav>
+
+    <section id="home">
+      <canvas id="three-canvas"></canvas>
+      <div class="hfade"></div>
+      <div class="hcontent">
+        <div class="badge">
+          <i class="fas fa-graduation-cap"></i> Pelajar SMK Negeri 64 Jakarta
+        </div>
+        <h1 class="hero">
+          <em>Satria</em> Henggar Yoselino, <br />
+          Software <em> Engineering </em>
+        </h1>
+        <p class="hsub">
+          Siswa kelas XI RPL 1 yang tertarik pada backend development.
+          Mempelajari pembuatan sistem website, pengelolaan database, serta
+          pengembangan API untuk membangun aplikasi web yang stabil dan efisien.
+        </p>
+        <div class="hacts">
+          <a href="#projects" class="btn bb">Lihat Project</a>
+          <a href="#contact" class="btn bg">Hubungi Saya</a>
+        </div>
+      </div>
+      <div class="hscroll">
+        <span>scroll</span>
+        <div class="sdot"></div>
+      </div>
+
+      <div class="gwrap">
+        <div class="glabel">— Mini game · Asteroid Shooter</div>
+        <div class="gbox">
+          <div class="gtop">
+            <div class="dots"><span></span><span></span><span></span></div>
+            <div class="gtitle">ShyesGames.exe</div>
+            <div class="gscore">
+              Score: <b id="sc">0</b> &nbsp;|&nbsp; Lives: <b id="lv">3</b>
+            </div>
+          </div>
+          <canvas id="gameCanvas" width="558" height="290"></canvas>
+          <div class="gfoot">
+            <div class="ghint">
+              <i class="fas fa-arrow-left"></i
+              ><i class="fas fa-arrow-right"></i> Gerak &nbsp;|&nbsp;
+              <i class="fas fa-arrow-up"></i> / Space Tembak
+            </div>
+            <button class="gbtn" onclick="startGame()">Start</button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="about">
+      <div class="inner">
+        <div class="lbl r">About</div>
+        <h2 class="st r d1">Tentang <em>Saya</em></h2>
+        <div class="sep r d2"></div>
+        <div class="agrid">
+          <div class="r d1">
+            <div class="acard">
+              <div class="avt">
+                <img
+                  src="Me.jpeg"
+                  alt="Satria Henggar Yoselino"
+                  style="
+                    width: 100%;
+                    height: 100%;
+                    object-fit: cover;
+                    border-radius: 50%;
+                  "
+                />
+              </div>
+              <div class="aname">Satria Henggar Yoselino</div>
+              <div class="arole">Backend Developer</div>
+              <div class="adiv"></div>
+              <div class="ameta">
+                <div class="amr">
+                  <i class="fas fa-graduation-cap"></i
+                  ><span><b>SMK Negeri 64 Jakarta</b></span>
+                </div>
+                <div class="amr">
+                  <i class="fas fa-book"></i
+                  ><span>Jurusan RPL · Kelas XI 1</span>
+                </div>
+                <div class="amr">
+                  <i class="fas fa-map-marker-alt"></i
+                  ><span>Jakarta, Indonesia</span>
+                </div>
+                <div class="amr">
+                  <i
+                    class="fas fa-circle"
+                    style="color: #28c840; font-size: 0.45rem"
+                  ></i
+                  ><span>Tersedia untuk freelance</span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="atext r d2">
+            <p>
+              Saya <strong>Satria Henggar Yoselino</strong>, siswa kelas XI RPL
+              yang passionate di dunia Software Engineering. Mulai belajar
+              coding sejak kelas X dari YouTube, FreeCodeCamp, SantriKoding,
+              PetaniKode.
+            </p>
+            <p>
+              Saya memiliki ketertarikan dalam membuat website yang tidak hanya
+              berfungsi dengan baik, tetapi juga memiliki tampilan yang menarik
+              serta mudah digunakan. Pengalaman tersebut saya kembangkan melalui
+              berbagai tugas sekolah maupun proyek mandiri. Sekarang lagi fokus
+              belajar
+              <strong> React</strong> dan <strong>Laravel</strong> secara lebih
+              serius.
+            </p>
+            <p>
+              Aktif di Sekolah, pernah ikut lomba web design tingkat kota,
+              Target saya sebagai pelajar: terus belajar dengan fokus dan
+              konsisten untuk memperdalam pemahaman di bidang
+              <strong>Software Engineering</strong>.
+            </p>
+            <div class="chips">
+              <span class="chip">JavaScript</span
+              ><span class="chip">React</span> <span class="chip">Node.js</span
+              ><span class="chip">PHP</span><span class="chip">MySQL</span>
+              <span class="chip">Git / GitHub</span
+              ><span class="chip">Figma</span>
+              <span class="chip">Golang</span>
+              <span class="chip">Java</span>
+              <span class="chip">Flutter</span>
+              <span class="chip">C#</span>
+              <span class="chip">Godot</span>
+            </div>
+            <div class="astats">
+              <div class="astat">
+                <div class="astn">23+</div>
+                <div class="astl">Projects</div>
+              </div>
+              <!-- <div class="astat">
+                <div class="astn">2</div>
+                <div class="astl">Penghargaan</div>
+              </div> -->
+              <div class="astat">
+                <div class="astn">1th+</div>
+                <div class="astl">Coding</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="experience">
+      <div class="inner">
+        <div class="lbl r">Experience</div>
+        <h2 class="st r d1">Pengalaman <em>Saya</em></h2>
+        <div class="sep r d2"></div>
+        <div class="egrid r">
+          <div class="etabs">
+            <div class="etab active" onclick="swExp(0, this)">
+              <div class="etco">Ekstrakulikuler Taekwondo</div>
+              <div class="etyr">2025 — Sekarang</div>
+            </div>
+            <div class="etab" onclick="swExp(1, this)">
+              <div class="etco">Ekstrakulikuler Robotik</div>
+              <div class="etyr">2025 — Sekarang</div>
+            </div>
+            <div class="etab" onclick="swExp(2, this)">
+              <div class="etco">Freelance Pertama</div>
+              <div class="etyr">2024</div>
+            </div>
+            <div class="etab" onclick="swExp(3, this)">
+              <div class="etco">Belajar Mandiri</div>
+              <div class="etyr">2024</div>
+            </div>
+          </div>
+          <div>
+            <div class="edets active" id="e0">
+              <div class="edrole">
+                Ketua Divisi Taekwondo — Ekstrakulikuler Taekwondo
+              </div>
+              <div class="edco">SMK Negeri 64 Jakarta</div>
+              <div class="edyr">Agustus 2025 — Sekarang</div>
+              <p class="eddesc">
+                Aktif dalam kegiatan ekstrakurikuler Taekwondo di sekolah
+                sebagai Ketua Divisi Taekwondo. Bertanggung jawab dalam
+                mengoordinasikan kegiatan latihan, membangun kedisiplinan
+                anggota, serta membantu pelatih dalam mengembangkan kemampuan
+                teknik dan mental para anggota.
+              </p>
+              <ul class="edlist">
+                <li>
+                  Mengkoordinasikan kegiatan latihan rutin dan aktivitas
+                  ekstrakurikuler Taekwondo
+                </li>
+                <li>
+                  Membantu pelatih dalam membimbing anggota baru dalam memahami
+                  dasar-dasar Taekwondo
+                </li>
+                <li>
+                  Menjaga kedisiplinan serta kekompakan anggota selama kegiatan
+                  latihan
+                </li>
+                <li>
+                  Mengorganisir partisipasi tim dalam kegiatan pertandingan atau
+                  demonstrasi Taekwondo di sekolah
+                </li>
+              </ul>
+              <div class="etags">
+                <span class="etag">Leadership</span
+                ><span class="etag">Teamwork</span
+                ><span class="etag">Discipline</span
+                ><span class="etag">Communication</span>
+              </div>
+            </div>
+            <div class="edets" id="e1">
+              <div class="edrole">Peserta Lomba Web Design</div>
+              <div class="edco">Dinas Pendidikan DKI Jakarta</div>
+              <div class="edyr">Maret 2024</div>
+              <p class="eddesc">
+                Ikut lomba web design tingkat kota Jakarta. Dari 40+ peserta SMK
+                se-Jakarta, berhasil masuk 5 besar — pengalaman yang cukup
+                membanggakan buat saya.
+              </p>
+              <ul class="edlist">
+                <li>Buat website tema pariwisata lokal dalam 8 jam</li>
+                <li>Desain dulu di Figma sebelum coding</li>
+                <li>Presentasi hasil kerja di depan juri dari industri</li>
+                <li>Masuk 5 besar dari 40+ peserta</li>
+              </ul>
+              <div class="etags">
+                <span class="etag">Figma</span><span class="etag">HTML/CSS</span
+                ><span class="etag">JavaScript</span>
+              </div>
+            </div>
+            <div class="edets" id="e2">
+              <div class="edrole">Freelance Web Developer</div>
+              <div class="edco">Klien Pertama — Usaha Catering</div>
+              <div class="edyr">Juni — Agustus 2024</div>
+              <p class="eddesc">
+                Proyek freelance pertama: bikin website company profile buat
+                usaha catering teman. Pertama kali kerja dengan klien beneran,
+                dan hasilnya memuaskan!
+              </p>
+              <ul class="edlist">
+                <li>
+                  Website company profile 5 halaman dari desain sampai deploy
+                </li>
+                <li>Integrasi Google Maps dan WhatsApp floating button</li>
+                <li>Deploy ke Hostinger dengan domain custom</li>
+                <li>
+                  Klien happy — website berhasil dapat order baru dari online
+                </li>
+              </ul>
+              <div class="etags">
+                <span class="etag">HTML/CSS</span
+                ><span class="etag">JavaScript</span
+                ><span class="etag">Figma</span
+                ><span class="etag">Hosting</span>
+              </div>
+            </div>
+            <div class="edets" id="e3">
+              <div class="edrole">Self-Learning Developer</div>
+              <div class="edco">YouTube · FreeCodeCamp · Dicoding</div>
+              <div class="edyr">Januari 2023 — Sekarang</div>
+              <p class="eddesc">
+                Di sinilah semua dimulai. Belajar otodidak sambil ngerjain
+                proyek kecil setiap minggu. Platform online jadi guru terbaik
+                selama perjalanan ini.
+              </p>
+              <ul class="edlist">
+                <li>
+                  Selesaikan kursus Web Development di Dicoding
+                  (Beginner–Intermediate)
+                </li>
+                <li>Sertifikat Responsive Web Design dari FreeCodeCamp</li>
+                <li>Lagi belajar FullStack lebih serius</li>
+                <li>Aktif di komunitas developer online</li>
+              </ul>
+              <div class="etags">
+                <span class="etag">Dicoding</span
+                ><span class="etag">FreeCodeCamp</span
+                ><span class="etag">PetaniKode</span
+                ><span class="etag">SantriKoding</span
+                ><span class="etag">React</span
+                ><span class="etag">Node.js</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="projects">
+      <div class="inner">
+        <div class="lbl r">Portfolio</div>
+        <h2 class="st r d1">Project <em>Saya</em></h2>
+        <div class="sep r d2"></div>
+        <div class="pfilt r">
+          <button class="flt active" onclick="fp('all', this)">Semua</button>
+          <button class="flt" onclick="fp('web', this)">Website</button>
+          <button class="flt" onclick="fp('app', this)">Web App</button>
+          <button class="flt" onclick="fp('design', this)">UI Design</button>
+        </div>
+        <div class="pgrid" id="pg">
+          <div class="pc feat r" data-c="web">
+            <div
+              class="pimg"
+              style="background: linear-gradient(135deg, #dde8ff, #c5d4f8)"
+            >
+              <i class="fas fa-school" style="color: #2d5be3"></i>
+              <div class="pimg">
+                <img
+                  src="foto-project.jpg"
+                  alt="DucatiEcomerce"
+                  style="width: 100%; height: 100%; object-fit: cover"
+                />
+                <div class="pov">
+                  <a href="#" class="povb"
+                    ><i class="fas fa-external-link-alt"></i
+                  ></a>
+                  <a href="https://github.com/striaya" class="povb"
+                    ><i class="fab fa-github"></i
+                  ></a>
+                </div>
+              </div>
+            </div>
+            <div class="pb">
+              <div class="ftag">Terbaru</div>
+              <div class="pcat">Website Sekolah</div>
+              <div class="pname">Website Resmi SMKN 1 Jakarta</div>
+              <p class="pdesc">
+                Rebuilding website sekolah dari nol — lebih modern, responsif,
+                cepat. Fitur berita, pengumuman, galeri, dan profil jurusan.
+              </p>
+              <div class="pstack">
+                <span class="sb">HTML/CSS</span
+                ><span class="sb">JavaScript</span><span class="sb">PHP</span
+                ><span class="sb">MySQL</span>
+              </div>
+            </div>
+          </div>
+          <div class="pc r" data-c="web">
+            <div
+              class="pimg"
+              style="background: linear-gradient(135deg, #fdf0e8, #f5dcc8)"
+            >
+              <i class="fas fa-utensils" style="color: #e85d3a"></i>
+              <div class="pov">
+                <a href="#" class="povb"
+                  ><i class="fas fa-external-link-alt"></i></a
+                ><a href="#" class="povb"><i class="fab fa-github"></i></a>
+              </div>
+            </div>
+            <div class="pb">
+              <div class="pcat">Company Profile</div>
+              <div class="pname">Dapur Ibu — Catering</div>
+              <p class="pdesc">
+                Website catering dengan Google Maps, WhatsApp order, galeri
+                menu, dan form pemesanan. Proyek freelance pertama saya.
+              </p>
+              <div class="pstack">
+                <span class="sb">HTML/CSS</span
+                ><span class="sb">JavaScript</span><span class="sb">PHP</span>
+              </div>
+            </div>
+          </div>
+          <div class="pc r" data-c="app">
+            <div
+              class="pimg"
+              style="background: linear-gradient(135deg, #e8f8f0, #c5ecda)"
+            >
+              <i class="fas fa-check-circle" style="color: #2a8c5f"></i>
+              <div class="pov">
+                <a href="#" class="povb"
+                  ><i class="fas fa-external-link-alt"></i></a
+                ><a href="#" class="povb"><i class="fab fa-github"></i></a>
+              </div>
+            </div>
+            <div class="pb">
+              <div class="pcat">Web App</div>
+              <div class="pname">Absensi Digital IT Club</div>
+              <p class="pdesc">
+                Sistem absensi untuk IT Club sekolah. Login siswa, rekap
+                otomatis, export laporan Excel.
+              </p>
+              <div class="pstack">
+                <span class="sb">PHP</span><span class="sb">MySQL</span
+                ><span class="sb">Bootstrap</span>
+              </div>
+            </div>
+          </div>
+          <div class="pc r" data-c="app">
+            <div
+              class="pimg"
+              style="background: linear-gradient(135deg, #f0e8ff, #dcc8f5)"
+            >
+              <i class="fas fa-book-open" style="color: #7c3aed"></i>
+              <div class="pov">
+                <a href="#" class="povb"
+                  ><i class="fas fa-external-link-alt"></i></a
+                ><a href="#" class="povb"><i class="fab fa-github"></i></a>
+              </div>
+            </div>
+            <div class="pb">
+              <div class="pcat">Web App · React</div>
+              <div class="pname">StudyTrack — Catatan Belajar</div>
+              <p class="pdesc">
+                App web buat catat progress belajar. Ada pomodoro timer,
+                flashcard, dan statistik mingguan.
+              </p>
+              <div class="pstack">
+                <span class="sb">React</span><span class="sb">LocalStorage</span
+                ><span class="sb">Tailwind</span>
+              </div>
+            </div>
+          </div>
+          <div class="pc r" data-c="design">
+            <div
+              class="pimg"
+              style="background: linear-gradient(135deg, #fff8e8, #f5e8c0)"
+            >
+              <i class="fas fa-paint-brush" style="color: #c9a03a"></i>
+              <div class="pov">
+                <a href="#" class="povb"
+                  ><i class="fas fa-external-link-alt"></i></a
+                ><a href="#" class="povb"><i class="fab fa-figma"></i></a>
+              </div>
+            </div>
+            <div class="pb">
+              <div class="pcat">UI Design · Figma</div>
+              <div class="pname">Lomba Web Design Pariwisata</div>
+              <p class="pdesc">
+                Desain website pariwisata Jakarta untuk lomba Dinas Pendidikan
+                DKI. Masuk 5 besar dari 40+ peserta.
+              </p>
+              <div class="pstack">
+                <span class="sb">Figma</span><span class="sb">HTML/CSS</span>
+              </div>
+            </div>
+          </div>
+          <div class="pc r" data-c="web">
+            <div
+              class="pimg"
+              style="background: linear-gradient(135deg, #e8f4ff, #c8e0f8)"
+            >
+              <i class="fas fa-store" style="color: #2d5be3"></i>
+              <div class="pov">
+                <a href="#" class="povb"
+                  ><i class="fas fa-external-link-alt"></i></a
+                ><a href="#" class="povb"><i class="fab fa-github"></i></a>
+              </div>
+            </div>
+            <div class="pb">
+              <div class="pcat">Landing Page</div>
+              <div class="pname">UMKM Batik Nusantara</div>
+              <p class="pdesc">
+                Landing page untuk UMKM batik lokal — tugas akhir semester.
+                Responsif, SEO-friendly, katalog produk.
+              </p>
+              <div class="pstack">
+                <span class="sb">HTML/CSS</span
+                ><span class="sb">JavaScript</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="jasa">
+      <div class="inner">
+        <div class="lbl r">Services</div>
+        <h2 class="st r d1">Jasa Pembuatan <em>Website</em></h2>
+        <div class="sep r d2"></div>
+        <div class="sgrid">
+          <div class="sc2 r">
+            <div class="sic"><i class="fas fa-layer-group"></i></div>
+            <div class="snm">Company Profile</div>
+            <p class="sdesc">
+              Website profesional untuk bisnis atau organisasi. Clean,
+              responsif, dan SEO-friendly.
+            </p>
+            <ul class="slist">
+              <li>Hingga 6 halaman konten</li>
+              <li>Desain custom sesuai brand</li>
+              <li>Responsif semua perangkat</li>
+              <li>Form kontak + WhatsApp</li>
+              <li>Revisi 2x gratis</li>
+            </ul>
+            <div class="sprice">
+              <span class="spf">mulai</span><span class="spn">Rp 300rb</span>
+            </div>
+          </div>
+          <div class="sc2 r d1">
+            <div class="sic"><i class="fas fa-window-maximize"></i></div>
+            <div class="snm">Landing Page</div>
+            <p class="sdesc">
+              Halaman promosi yang menarik perhatian dan mendorong pengunjung
+              untuk action.
+            </p>
+            <ul class="slist">
+              <li>Desain modern & eye-catching</li>
+              <li>Animasi halus</li>
+              <li>Load cepat</li>
+              <li>Integrasi analytics</li>
+              <li>Revisi 2x gratis</li>
+            </ul>
+            <div class="sprice">
+              <span class="spf">mulai</span><span class="spn">Rp 150rb</span>
+            </div>
+          </div>
+          <div class="sc2 r d2">
+            <div class="sic"><i class="fas fa-cubes"></i></div>
+            <div class="snm">Web App Sederhana</div>
+            <p class="sdesc">
+              Aplikasi web dengan database — sistem absensi, katalog, CRUD, atau
+              form order.
+            </p>
+            <ul class="slist">
+              <li>Database MySQL / Firebase</li>
+              <li>Login sistem</li>
+              <li>Dashboard admin</li>
+              <li>Dokumentasi penggunaan</li>
+            </ul>
+            <div class="sprice">
+              <span class="spf">mulai</span><span class="spn">Rp 500rb</span>
+            </div>
+          </div>
+          <div class="sc2 r">
+            <div class="sic"><i class="fas fa-paint-brush"></i></div>
+            <div class="snm">UI Design Figma</div>
+            <p class="sdesc">
+              Desain antarmuka website atau app di Figma. Wireframe sampai
+              high-fidelity siap coding.
+            </p>
+            <ul class="slist">
+              <li>Wireframe & mockup</li>
+              <li>Component yang rapi</li>
+              <li>Revisi 3x gratis</li>
+            </ul>
+            <div class="sprice">
+              <span class="spf">mulai</span><span class="spn">Rp 100rb</span>
+            </div>
+          </div>
+          <div class="sc2 r d1">
+            <div class="sic"><i class="fas fa-wrench"></i></div>
+            <div class="snm">Perbaikan & Update</div>
+            <p class="sdesc">
+              Website ada bug atau perlu update? Saya bantu perbaiki dan tambah
+              fitur baru.
+            </p>
+            <ul class="slist">
+              <li>Debug & fix masalah</li>
+              <li>Tambah fitur baru</li>
+              <li>Optimasi kecepatan</li>
+            </ul>
+            <div class="sprice">
+              <span class="spf">mulai</span><span class="spn">Rp 50rb</span
+              ><span class="spu">/task</span>
+            </div>
+          </div>
+          <div class="sc2 r d2">
+            <div class="sic"><i class="fas fa-graduation-cap"></i></div>
+            <div class="snm">Tugas / Proyek Sekolah</div>
+            <p class="sdesc">
+              Khusus buat teman pelajar yang butuh website untuk tugas, PKL,
+              atau proyek akhir.
+            </p>
+            <ul class="slist">
+              <li>Harga khusus sesama pelajar</li>
+              <li>Konsultasi gratis</li>
+              <li>Bisa sambil belajar</li>
+            </ul>
+            <div class="sprice">
+              <span class="spf">mulai</span><span class="spn">Rp 50rb</span>
+            </div>
+          </div>
+        </div>
+        <div class="scta r">
+          <div class="sctat">
+            <h3>Ada project yang mau kita kerjakan?</h3>
+            <p>
+              Konsultasi gratis dulu. Tidak ada project yang terlalu kecil.
+              Let's talk!
+            </p>
+          </div>
+          <a href="#contact" class="btn bb" style="flex-shrink: 0"
+            >Chat Sekarang</a
+          >
+        </div>
+      </div>
+    </section>
+
+    <section id="contact">
+      <div class="inner">
+        <div class="lbl r">Contact</div>
+        <h2 class="st r d1">Hubungi <em>Saya</em></h2>
+        <div class="sep r d2"></div>
+        <div class="cgrid">
+          <div class="r d1">
+            <p class="cinfop">
+              Mau order website, konsultasi, atau sekadar ngobrol soal coding?
+              Jangan ragu hubungi saya — saya balas cepat kok.
+            </p>
+            <div class="citems">
+              <div class="cit">
+                <div class="citc"><i class="fas fa-envelope"></i></div>
+                <div>
+                  <div class="citl">Email</div>
+                  <div class="citv">rizky.dev@gmail.com</div>
+                </div>
+              </div>
+              <div class="cit">
+                <div class="citc"><i class="fab fa-whatsapp"></i></div>
+                <div>
+                  <div class="citl">WhatsApp</div>
+                  <div class="citv">+62 812-3456-7890</div>
+                </div>
+              </div>
+              <div class="cit">
+                <div class="citc"><i class="fas fa-map-marker-alt"></i></div>
+                <div>
+                  <div class="citl">Lokasi</div>
+                  <div class="citv">Jakarta, Indonesia</div>
+                </div>
+              </div>
+            </div>
+            <div class="socs">
+              <a href="#" class="soc" title="GitHub"
+                ><i class="fab fa-github"></i
+              ></a>
+              <a href="#" class="soc" title="LinkedIn"
+                ><i class="fab fa-linkedin-in"></i
+              ></a>
+              <a href="#" class="soc" title="Instagram"
+                ><i class="fab fa-instagram"></i
+              ></a>
+            </div>
+          </div>
+          <div class="r d2">
+            <form class="form" onsubmit="submitForm(event)">
+              <div class="frow">
+                <div class="fg">
+                  <label>Nama</label
+                  ><input type="text" placeholder="Nama kamu" required />
+                </div>
+                <div class="fg">
+                  <label>Email</label
+                  ><input
+                    type="email"
+                    placeholder="email@contoh.com"
+                    required
+                  />
+                </div>
+              </div>
+              <div class="fg">
+                <label>Keperluan</label>
+                <select>
+                  <option>Pilih keperluan</option>
+                  <option>Order website</option>
+                  <option>Konsultasi</option>
+                  <option>Tugas / PKL</option>
+                  <option>Kolaborasi</option>
+                  <option>Lainnya</option>
+                </select>
+              </div>
+              <div class="fg">
+                <label>Pesan</label
+                ><textarea
+                  placeholder="Ceritakan kebutuhan kamu..."
+                  required
+                ></textarea>
+              </div>
+              <div class="ffoot">
+                <button type="submit" class="btn bb">
+                  <i class="fas fa-paper-plane" style="margin-right: 6px"></i
+                  >Kirim Pesan
+                </button>
+                <span class="fn">Balas dalam 1–2 jam</span>
+              </div>
+              <div id="fstat"></div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer>
+      <div class="flogo"><b>Rizky</b> Pratama</div>
+      <ul class="flinks">
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#experience">Experience</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#jasa">Services</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+      <p class="fcopy">© 2024 Rizky Pratama — Student Developer · Jakarta</p>
+    </footer>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+    <script>
+      (function () {
+        const cv = document.getElementById("three-canvas");
+        const ren = new THREE.WebGLRenderer({
+          canvas: cv,
+          antialias: true,
+          alpha: true,
+        });
+        ren.setPixelRatio(Math.min(devicePixelRatio, 2));
+        ren.setClearColor(0, 0);
+        const scene = new THREE.Scene();
+        const cam = new THREE.PerspectiveCamera(55, 1, 0.1, 100);
+        cam.position.z = 6;
+        function resize() {
+          const p = cv.parentElement;
+          ren.setSize(p.clientWidth, p.clientHeight);
+          cam.aspect = p.clientWidth / p.clientHeight;
+          cam.updateProjectionMatrix();
+        }
+        resize();
+        window.addEventListener("resize", resize);
+
+        const geo = new THREE.BufferGeometry();
+        const n = 500,
+          pos = new Float32Array(n * 3);
+        for (let i = 0; i < n; i++) {
+          pos[i * 3] = (Math.random() - 0.5) * 28;
+          pos[i * 3 + 1] = (Math.random() - 0.5) * 18;
+          pos[i * 3 + 2] = (Math.random() - 0.5) * 8 - 2;
+        }
+        geo.setAttribute("position", new THREE.BufferAttribute(pos, 3));
+        scene.add(
+          new THREE.Points(
+            geo,
+            new THREE.PointsMaterial({
+              color: 0x2d5be3,
+              size: 0.055,
+              transparent: true,
+              opacity: 0.25,
+              blending: THREE.AdditiveBlending,
+            }),
+          ),
+        );
+
+        const rdata = [
+          [0, 0, -3, 1.3],
+          [-2, 1, -4, 0.7],
+          [2.5, -1, -3.5, 0.5],
+          [-1, -1.5, -5, 1.8],
+          [1, 2, -4.5, 0.55],
+        ];
+        const rings = rdata.map(([x, y, z, r]) => {
+          const m = new THREE.Mesh(
+            new THREE.TorusGeometry(r, 0.007, 4, 60),
+            new THREE.MeshBasicMaterial({
+              color: 0x2d5be3,
+              transparent: true,
+              opacity: 0.1,
+            }),
+          );
+          m.position.set(x, y, z);
+          m.rotation.x = Math.random() * Math.PI;
+          m.rotation.y = Math.random() * Math.PI;
+          m.userData.rs = [
+            (Math.random() - 0.5) * 0.007,
+            (Math.random() - 0.5) * 0.007,
+          ];
+          scene.add(m);
+          return m;
+        });
+
+        let mx = 0,
+          my = 0;
+        document.addEventListener("mousemove", (e) => {
+          mx = (e.clientX / innerWidth - 0.5) * 0.25;
+          my = (e.clientY / innerHeight - 0.5) * 0.25;
+        });
+        (function loop() {
+          requestAnimationFrame(loop);
+          cam.position.x += (mx - cam.position.x) * 0.025;
+          cam.position.y += (-my - cam.position.y) * 0.025;
+          cam.lookAt(scene.position);
+          rings.forEach((r) => {
+            r.rotation.x += r.userData.rs[0];
+            r.rotation.y += r.userData.rs[1];
+          });
+          ren.render(scene, cam);
+        })();
+      })();
+    </script>
+
+    <script>
+      (function () {
+        const cv = document.getElementById("gameCanvas"),
+          ctx = cv.getContext("2d");
+        const W = cv.width,
+          H = cv.height;
+        const scEl = document.getElementById("sc"),
+          lvEl = document.getElementById("lv");
+        let state = "idle",
+          score = 0,
+          lives = 3,
+          level = 1;
+        let ship,
+          bullets = [],
+          rocks = [],
+          pars = [],
+          keys = {},
+          frame = 0,
+          lastShot = 0,
+          aid;
+
+        function initShip() {
+          ship = { x: W / 2, y: H - 42, w: 11, h: 15, vx: 0, inv: 0 };
+        }
+
+        function spawnRock() {
+          const r = Math.random() * 15 + 7,
+            x = r + Math.random() * (W - r * 2);
+          const vy = 1 + level * 0.33 + Math.random() * 1.1,
+            vx = (Math.random() - 0.5) * 1.1;
+          const pts = Math.floor(Math.random() * 5 + 5);
+          const off = Array.from(
+            { length: pts },
+            () => r * (0.7 + Math.random() * 0.45),
+          );
+          rocks.push({
+            x,
+            y: -r,
+            vx,
+            vy,
+            r,
+            pts,
+            off,
+            rot: 0,
+            rs: (Math.random() - 0.5) * 0.05,
+          });
+        }
+
+        function burst(x, y, c, n) {
+          for (let i = 0; i < n; i++) {
+            const a = Math.random() * Math.PI * 2,
+              s = Math.random() * 2 + 0.7;
+            pars.push({
+              x,
+              y,
+              vx: Math.cos(a) * s,
+              vy: Math.sin(a) * s,
+              l: 1,
+              c,
+            });
+          }
+        }
+
+        window.startGame = function () {
+          if (aid) cancelAnimationFrame(aid);
+          score = 0;
+          lives = 3;
+          level = 1;
+          bullets = [];
+          rocks = [];
+          pars = [];
+          frame = 0;
+          scEl.textContent = 0;
+          lvEl.textContent = 3;
+          initShip();
+          state = "playing";
+          for (let i = 0; i < 3; i++) spawnRock();
+          loop();
+        };
+
+        function loop() {
+          aid = requestAnimationFrame(loop);
+          frame++;
+          ctx.fillStyle = "#f0ede8";
+          ctx.fillRect(0, 0, W, H);
+          ctx.strokeStyle = "rgba(45,91,227,.05)";
+          ctx.lineWidth = 1;
+          for (let x = 0; x < W; x += 34) {
+            ctx.beginPath();
+            ctx.moveTo(x, 0);
+            ctx.lineTo(x, H);
+            ctx.stroke();
+          }
+          for (let y = 0; y < H; y += 34) {
+            ctx.beginPath();
+            ctx.moveTo(0, y);
+            ctx.lineTo(W, y);
+            ctx.stroke();
+          }
+          if (state === "playing") update();
+          draw();
+          if (state === "idle")
+            overlay("ASTEROID SHOOTER", "Tekan Start untuk bermain", "#2d5be3");
+          if (state === "dead")
+            overlay(
+              "GAME OVER",
+              "Score: " + score + "  ·  Tekan Start lagi",
+              "#e85d3a",
+            );
+        }
+
+        function update() {
+          const sp = 3.5;
+          if ((keys["ArrowLeft"] || keys["a"]) && ship.x > ship.w)
+            ship.vx = -sp;
+          else if ((keys["ArrowRight"] || keys["d"]) && ship.x < W - ship.w)
+            ship.vx = sp;
+          else ship.vx *= 0.7;
+          ship.x = Math.max(ship.w, Math.min(W - ship.w, ship.x + ship.vx));
+          if (ship.inv > 0) ship.inv--;
+          const now = Date.now();
+          if (
+            (keys["ArrowUp"] || keys[" "] || keys["w"]) &&
+            now - lastShot > 180
+          ) {
+            bullets.push({ x: ship.x, y: ship.y - ship.h, vy: -8.5 });
+            lastShot = now;
+          }
+          bullets = bullets.filter((b) => {
+            b.y += b.vy;
+            return b.y > 0;
+          });
+          if (frame % Math.max(30, 52 - level * 5) === 0) spawnRock();
+          rocks.forEach((r) => {
+            r.x += r.vx;
+            r.y += r.vy;
+            r.rot += r.rs;
+          });
+          rocks = rocks.filter((r) => r.y < H + r.r);
+          rocks = rocks.filter((r) => {
+            for (let i = 0; i < bullets.length; i++) {
+              if (Math.hypot(bullets[i].x - r.x, bullets[i].y - r.y) < r.r) {
+                bullets.splice(i, 1);
+                score += Math.floor((50 / r.r) * 4);
+                scEl.textContent = score;
+                burst(r.x, r.y, "#2d5be3", 7);
+                if (score > level * 160) level++;
+                return false;
+              }
+            }
+            return true;
+          });
+          if (ship.inv === 0) {
+            rocks = rocks.filter((r) => {
+              if (
+                Math.hypot(ship.x - r.x, ship.y - r.y) <
+                r.r + ship.w * 0.75
+              ) {
+                lives--;
+                lvEl.textContent = lives;
+                burst(ship.x, ship.y, "#e85d3a", 10);
+                ship.inv = 75;
+                if (lives <= 0) state = "dead";
+                return false;
+              }
+              return true;
+            });
+          }
+          pars.forEach((p) => {
+            p.x += p.vx;
+            p.y += p.vy;
+            p.l -= 0.032;
+            p.vx *= 0.94;
+            p.vy *= 0.94;
+          });
+          pars = pars.filter((p) => p.l > 0);
+        }
+
+        function draw() {
+          pars.forEach((p) => {
+            ctx.save();
+            ctx.globalAlpha = p.l;
+            ctx.fillStyle = p.c;
+            ctx.beginPath();
+            ctx.arc(p.x, p.y, 2.5, 0, Math.PI * 2);
+            ctx.fill();
+            ctx.restore();
+          });
+          rocks.forEach((r) => {
+            ctx.save();
+            ctx.translate(r.x, r.y);
+            ctx.rotate(r.rot);
+            ctx.beginPath();
+            const st = (Math.PI * 2) / r.pts;
+            for (let i = 0; i < r.pts; i++) {
+              const a = i * st,
+                rd = r.off[i];
+              i === 0
+                ? ctx.moveTo(Math.cos(a) * rd, Math.sin(a) * rd)
+                : ctx.lineTo(Math.cos(a) * rd, Math.sin(a) * rd);
+            }
+            ctx.closePath();
+            ctx.strokeStyle = "#8892b0";
+            ctx.lineWidth = 1.5;
+            ctx.stroke();
+            ctx.fillStyle = "rgba(100,110,180,.1)";
+            ctx.fill();
+            ctx.restore();
+          });
+          bullets.forEach((b) => {
+            ctx.fillStyle = "#2d5be3";
+            ctx.beginPath();
+            ctx.arc(b.x, b.y, 2.5, 0, Math.PI * 2);
+            ctx.fill();
+          });
+          if (
+            state === "playing" &&
+            (ship.inv === 0 || Math.floor(ship.inv / 5) % 2 === 0)
+          ) {
+            ctx.save();
+            ctx.translate(ship.x, ship.y);
+            if (frame % 6 < 3) {
+              ctx.beginPath();
+              ctx.moveTo(-3.5, ship.h * 0.3);
+              ctx.lineTo(0, ship.h * 0.6);
+              ctx.lineTo(3.5, ship.h * 0.3);
+              ctx.fillStyle = "rgba(232,93,58,.55)";
+              ctx.fill();
+            }
+            ctx.beginPath();
+            ctx.moveTo(0, -ship.h);
+            ctx.lineTo(ship.w, ship.h * 0.5);
+            ctx.lineTo(ship.w * 0.35, ship.h * 0.15);
+            ctx.lineTo(-ship.w * 0.35, ship.h * 0.15);
+            ctx.lineTo(-ship.w, ship.h * 0.5);
+            ctx.closePath();
+            ctx.strokeStyle = "#2d5be3";
+            ctx.lineWidth = 1.5;
+            ctx.stroke();
+            ctx.fillStyle = "rgba(45,91,227,.13)";
+            ctx.fill();
+            ctx.restore();
+          }
+          ctx.font = "11px Plus Jakarta Sans";
+          ctx.fillStyle = "rgba(100,110,180,.4)";
+          ctx.fillText("Level " + level, 9, 17);
+        }
+
+        function overlay(t2, sub, col) {
+          ctx.save();
+          ctx.fillStyle = "rgba(240,237,232,.78)";
+          ctx.fillRect(0, 0, W, H);
+          ctx.font = "600 20px Plus Jakarta Sans";
+          ctx.fillStyle = col;
+          ctx.textAlign = "center";
+          ctx.fillText(t2, W / 2, H / 2 - 15);
+          ctx.font = "12px Plus Jakarta Sans";
+          ctx.fillStyle = "#6b6560";
+          ctx.fillText(sub, W / 2, H / 2 + 10);
+          ctx.textAlign = "left";
+          ctx.restore();
+        }
+
+        document.addEventListener("keydown", (e) => {
+          keys[e.key] = true;
+          if (e.key === " ") e.preventDefault();
+        });
+        document.addEventListener("keyup", (e) => (keys[e.key] = false));
+        cv.addEventListener(
+          "touchstart",
+          (e) => {
+            e.preventDefault();
+            const re = cv.getBoundingClientRect(),
+              tx = e.touches[0].clientX - re.left,
+              sx = tx * (W / re.width);
+            sx < W * 0.35
+              ? ((keys["ArrowLeft"] = true), (keys["ArrowRight"] = false))
+              : sx > W * 0.65
+                ? ((keys["ArrowRight"] = true), (keys["ArrowLeft"] = false))
+                : (keys[" "] = true);
+          },
+          { passive: false },
+        );
+        cv.addEventListener("touchend", () => {
+          keys["ArrowLeft"] = keys["ArrowRight"] = keys[" "] = false;
+        });
+        loop();
+      })();
+    </script>
+
+    <script>
+      window.addEventListener("scroll", () => {
+        document.getElementById("nav").classList.toggle("sc", scrollY > 30);
+        const ss = [
+          "home",
+          "about",
+          "experience",
+          "projects",
+          "jasa",
+          "contact",
+        ];
+        let cur = "home";
+        ss.forEach((id) => {
+          const el = document.getElementById(id);
+          if (el && scrollY >= el.offsetTop - 100) cur = id;
+        });
+        document
+          .querySelectorAll(".nlinks a")
+          .forEach((a) =>
+            a.classList.toggle("active", a.getAttribute("href") === "#" + cur),
+          );
+      });
+      function toggleNav() {
+        document.getElementById("nl").classList.toggle("open");
+      }
+      const io = new IntersectionObserver(
+        (e) =>
+          e.forEach((x) => {
+            if (x.isIntersecting) x.target.classList.add("v");
+          }),
+        { threshold: 0.1 },
+      );
+      document.querySelectorAll(".r").forEach((el) => io.observe(el));
+      function swExp(i, el) {
+        document
+          .querySelectorAll(".etab")
+          .forEach((e) => e.classList.remove("active"));
+        document
+          .querySelectorAll(".edets")
+          .forEach((e) => e.classList.remove("active"));
+        el.classList.add("active");
+        document.getElementById("e" + i).classList.add("active");
+      }
+      function fp(cat, btn) {
+        document
+          .querySelectorAll(".flt")
+          .forEach((b) => b.classList.remove("active"));
+        btn.classList.add("active");
+        document.querySelectorAll(".pc").forEach((c) => {
+          const s = cat === "all" || c.dataset.c === cat;
+          c.style.opacity = s ? "1" : ".2";
+          c.style.pointerEvents = s ? "auto" : "none";
+          c.style.transition = "all .25s";
+        });
+      }
+      function submitForm(e) {
+        e.preventDefault();
+        const btn = e.target.querySelector("button[type=submit]");
+        btn.disabled = true;
+        btn.innerHTML =
+          '<i class="fas fa-circle-notch fa-spin" style="margin-right:6px"></i>Mengirim...';
+        setTimeout(() => {
+          btn.disabled = false;
+          btn.innerHTML =
+            '<i class="fas fa-paper-plane" style="margin-right:6px"></i>Kirim Pesan';
+          const s = document.getElementById("fstat");
+          s.className = "ok";
+          s.textContent = "Pesan terkirim! Saya akan segera membalas.";
+          e.target.reset();
+          setTimeout(() => {
+            s.className = "";
+            s.style.display = "none";
+          }, 5000);
+        }, 1400);
+      }
+    </script>
+  </body>
+</html>
