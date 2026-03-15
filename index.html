@@ -759,6 +759,14 @@
       <p class="fcopy">© 2024 Rizky Pratama — Student Developer · Jakarta</p>
     </footer>
 
+    <audio id="bgMusic" loop>
+      <source src="adatitik.mp3" type="audio/mpeg" />
+    </audio>
+
+    <button id="musicBtn" onclick="toggleMusic()" title="Toggle Music">
+      <i class="fas fa-music" id="musicIcon"></i>
+    </button>
+
     <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
     <script>
       (function () {
@@ -1202,5 +1210,7 @@
         }, 1400);
       }
     </script>
+
+    <script src="main.js"></script>
   </body>
 </html>
