@@ -1208,20 +1208,6 @@ footer {
   .hbg {
     display: flex;
   }
-  .nlinks.open {
-    display: flex;
-    flex-direction: column;
-    position: fixed;
-    top: var(--nav-h);
-    left: 0;
-    right: 0;
-    bottom: 0;
-    background: var(--surface);
-    padding: 36px 20px;
-    gap: 18px;
-    z-index: 99;
-    border-top: 1px solid var(--border);
-  }
   .nlinks.open a {
     font-size: 0.97rem;
   }
@@ -1282,4 +1268,26 @@ footer {
 #musicBtn.muted {
   background: var(--border2);
   color: var(--text3);
+}
+
+@media (max-width: 820px) {
+  .nlinks.open {
+    display: flex !important;
+    flex-direction: column !important;
+    position: fixed !important;
+    top: var(--nav-h) !important;
+    left: 0 !important;
+    right: 0 !important;
+    bottom: 0 !important;
+    width: 100vw !important;
+    min-height: calc(100vh - var(--nav-h)) !important;
+    background: rgba(247, 246, 243, 0.6) !important;
+    backdrop-filter: blur(24px) !important;
+    -webkit-backdrop-filter: blur(24px) !important;
+    padding: 36px 20px !important;
+    gap: 18px !important;
+    z-index: 9999 !important;
+    border-top: 1px solid var(--border) !important;
+    opacity: 1 !important;
+  }
 }
