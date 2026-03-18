@@ -559,12 +559,13 @@
                 memudahkan pengguna memesan makanan secara cepat.
               </p>
               <div class="pstack">
-                <span class="sb">Figma</span><span class="sb">UI/UX Design</span>
+                <span class="sb">Figma</span
+                ><span class="sb">UI/UX Design</span>
               </div>
             </div>
           </div>
           <div class="pc r" data-c="web">
-             <div
+            <div
               class="pimg"
               style="background: linear-gradient(135deg, #fdf0e8, #f5dcc8)"
             >
@@ -585,8 +586,7 @@
                 Responsif, SEO-friendly, katalog produk.
               </p>
               <div class="pstack">
-                <span class="sb">React</span
-                ><span class="sb">JavaScript</span>
+                <span class="sb">React</span><span class="sb">JavaScript</span>
               </div>
             </div>
           </div>
@@ -853,13 +853,52 @@
       </p>
     </footer>
 
-    <audio id="bgMusic" loop>
-      <source src="adatitik.mp3" type="audio/mpeg" />
-    </audio>
+    <audio id="bgMusic" loop></audio>
 
-    <button id="musicBtn" onclick="toggleMusic()" title="Toggle Music">
-      <i class="fas fa-music" id="musicIcon"></i>
+    <div id="musicPlayer">
+      <button onclick="prevSong()" id="prevBtn" title="Lagu sebelumnya">
+        <i class="fas fa-backward"></i>
+      </button>
+      <button onclick="toggleMusic()" id="musicBtn" title="Play/Pause">
+        <i class="fas fa-music" id="musicIcon"></i>
+      </button>
+      <button onclick="nextSong()" id="nextBtn" title="Lagu berikutnya">
+        <i class="fas fa-forward"></i>
+      </button>
+      <span id="songTitle">-</span>
+    </div>
+
+    <button id="thrBtn" onclick="openTHR()">
+      <i class="fas fa-hand-holding-heart"></i>
+      <span>Beri THR</span>
     </button>
+
+    <div id="thrModal" onclick="closeTHR(event)">
+      <div class="thr-box">
+        <div class="thr-header">
+          <div class="thr-lantern">
+            <i class="fas fa-gift"></i>
+          </div>
+          <h2 class="thr-title">Bagi THR yuk</h2>
+          <p class="thr-sub">Scan QRIS di bawah untuk kasih THR ke Satria</p>
+        </div>
+        <div class="thr-qris">
+          <img src="qris.jpeg" alt="QRIS Satria" id="qrisImg" />
+          <p class="thr-note">
+            <i class="fas fa-qrcode"></i> Scan pakai aplikasi apapun
+          </p>
+        </div>
+        <div class="thr-footer">
+          <p>a/n <b>Stria</b></p>
+          <p class="thr-thanks">
+             lakum lillahi ta'ala maaf jika ada salah baik dari ucapan maupun perbuatan 
+          </p>
+        </div>
+        <button class="thr-close" onclick="closeTHR()">
+          <i class="fas fa-times"></i>
+        </button>
+      </div>
+    </div>
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
     <script>

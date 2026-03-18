@@ -1,7 +1,22 @@
+const songs = [
+  { src: 'adatitik.mp3', title: 'Ada titik titik di ujung doa' },
+  { src: 'disarankan.mp3', title: 'Disarankan di Bandung' },
+  { src: 'janjipalsu.mp4', title: 'Janji Palsu' },
+];
+
+let currentSong = 0;
+let playing = false;
+
 const music = document.getElementById('bgMusic');
 const musicBtn = document.getElementById('musicBtn');
 const musicIcon = document.getElementById('musicIcon');
-let playing = false;
+
+function loadSong(index) {
+  music.src = songs[index].src;
+  music.load();
+  document.getElementById('songTitle').textContent = songs[index].title;
+  if (playing) music.play();
+}
 
 function toggleMusic() {
   if (playing) {
@@ -17,13 +32,45 @@ function toggleMusic() {
   }
 }
 
+function nextSong() {
+  currentSong = (currentSong + 1) % songs.length;
+  loadSong(currentSong);
+}
+
+function prevSong() {
+  currentSong = (currentSong - 1 + songs.length) % songs.length;
+  loadSong(currentSong);
+}
+
+music.addEventListener('ended', () => nextSong());
+
 document.addEventListener('click', function startMusic() {
   if (!playing) {
     music.volume = 0.4;
+    loadSong(currentSong);
     music.play().then(() => {
       playing = true;
       musicIcon.className = 'fas fa-pause';
-    }).catch(()=>{});
+      musicBtn.classList.remove('muted');
+    }).catch(() => {});
   }
   document.removeEventListener('click', startMusic);
 }, { once: true });
+
+loadSong(0);
+
+function openTHR() {
+  document.getElementById('thrModal').classList.add('active');
+  document.body.style.overflow = 'hidden';
+}
+
+function closeTHR(e) {
+  if (!e || e.target === document.getElementById('thrModal')) {
+    document.getElementById('thrModal').classList.remove('active');
+    document.body.style.overflow = '';
+  }
+}
+
+document.addEventListener('keydown', e => {
+  if (e.key === 'Escape') closeTHR();
+});
