@@ -188,13 +188,13 @@ h2.st em {
   border-radius: 1px;
 }
 
-/* HOME */
 #home {
   display: flex;
   flex-direction: column;
   position: relative;
   overflow: hidden;
   padding-top: var(--nav-h);
+  padding-top: calc(var(--nav-h) + 40px) !important;
 }
 #three-canvas {
   position: absolute;
@@ -1234,7 +1234,7 @@ footer {
   }
   .astats {
     grid-template-columns: repeat(3, 1fr);
-  }
+  } 
   .hcontent,
   .gwrap {
     padding-left: 20px;
@@ -1258,6 +1258,8 @@ footer {
   padding: 8px 20px;
   z-index: 99;
   box-shadow: 0 2px 12px rgba(0,0,0,.04);
+  transform: none !important;
+  margin: 0 !important;
 }
 #musicPlayer button {
   width: 28px;
@@ -1481,18 +1483,3 @@ footer {
 .thr-close:hover {
   background: var(--border);
 }
-
-@media (max-width: 600px) {
-  #musicPlayer {
-    bottom: 80px;
-    left: 16px;
-    max-width: calc(100vw - 32px);
-  }
-  #songTitle {
-    max-width: 70px;
-  }
-  #thrBtn {
-    bottom: 24px;
-    right: 16px;
-  }
-} 
