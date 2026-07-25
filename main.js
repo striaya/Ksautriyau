@@ -1,7 +1,7 @@
 const songs = [
-  { src: 'adatitik.mp3', title: 'Ada titik titik di ujung doa' },
-  { src: 'disarankan.mp3', title: 'Disarankan di Bandung' },
-  { src: 'janjipalsu.mp4', title: 'Janji Palsu' },
+  // { src: 'adatitik.mp3', title: 'Ada titik titik di ujung doa' },
+  { src: 'dontlookback.mp3', title: 'Don\'t Look Back Back In Anger' },
+  { src: 'antlantis.mp3', title: 'Atlantis' },
 ];
 
 let currentSong = 0;
@@ -46,7 +46,7 @@ music.addEventListener('ended', () => nextSong());
 
 document.addEventListener('click', function startMusic() {
   if (!playing) {
-    music.volume = 0.4;
+    music.volume = 90/100;
     loadSong(currentSong);
     music.play().then(() => {
       playing = true;
